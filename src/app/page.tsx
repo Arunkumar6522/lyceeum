@@ -61,58 +61,6 @@ export default function Home() {
         </div>
 
 
-        <section className="text-center">
-  <div>
-    {/* Teacher Avatars */}
-    <Image
-      src="/Home/Carousal/Deeksha.jpg"
-      alt="Teacher 1"
-      width={60}
-      height={60}
-      className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover"
-    />
-    <Image
-      src="/Home/Carousal/Kaveri.JPG"
-      alt="Teacher 2"
-      width={60}
-      height={60}
-      className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover -ml-3"
-    />
-    <Image
-      src="/Home/Carousal/Maadhurima.JPG"
-      alt="Teacher 3"
-      width={60}
-      height={60}
-      className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover -ml-3"
-    />
-    <Image
-      src="/Home/Carousal/Snehmoy.JPG"
-      alt="Teacher 4"
-      width={60}
-      height={60}
-      className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover -ml-3"
-    />
-    <Image
-      src="/Home/Carousal/Sri.JPG"
-      alt="Teacher 5"
-      width={60}
-      height={60}
-      className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover -ml-3"
-    />
-    <Image
-      src="/Home/Carousal/Tushar.JPG"
-      alt="Teacher 6"
-      width={60}
-      height={60}
-      className="w-16 h-16 rounded-full border-3 border-white shadow-md object-cover -ml-3"
-    />
-
-    {/* Count bubble */}
-    <div className="w-16 h-16 flex items-center justify-center rounded-full border-3 border-white bg-primary text-white font-bold text-lg shadow-md -ml-3">
-      200+
-    </div>
-  </div>
-</section>
 
 
 
