@@ -109,7 +109,7 @@ export default function FreeMathClassForm() {
           {/* Button */}
           <button
             type="submit"
-            className="w-full bg-white text-primary font-semibold px-4 py-3 rounded-full transition hover:bg-white/90"
+            className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold px-4 py-3 rounded-full transition hover:shadow-emerald-500/25 transform hover:scale-105 border border-emerald-400/30"
           >
             Book A Free Math Class
           </button>

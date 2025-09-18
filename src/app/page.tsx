@@ -16,48 +16,40 @@ export default function Home() {
     <>
     
     <div
-      className="relative flex items-center justify-center min-h-screen px-6 sm:px-0 text-white"
+      className="relative flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 text-white pt-16 sm:pt-20"
       style={{
-        backgroundImage: "url('Home/Carousal/Carousal_image.png')", // place your image in /public as chalkboard-bg.png
+        backgroundImage: "url('student-using-laptop-having-online-class-with-teac-2025-03-18-19-01-01-utc.jpg')",
         backgroundSize: "cover",
-        backgroundPosition: "top",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
       }}
     >
-      {/* Top-right Enquiry button */}
-      <div className="absolute top-20 right-4 z-20 sm:top-24">
-        <button onClick={() => setEnquiryOpen(true)} className="px-4 py-2 bg-white text-primary font-semibold rounded-full shadow-md hover:bg-white/90 transition-colors">
-          Enquiry
-        </button>
-      </div>
 
       {/* Overlay for readability */}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
 
       {/* Content */}
-      <div className="relative text-center space-y-6 max-w-3xl px-4">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl italic font-extrabold leading-snug text-center text-primary">
-  <span className="text-white">Excellence in</span>{" "}
-  <span className="text-primary">STEM Education</span>
+      <div className="relative text-center space-y-4 sm:space-y-6 max-w-4xl px-4">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-center drop-shadow-2xl">
+  <span className="text-white drop-shadow-lg">Unlock Your</span>{" "}
+  <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent drop-shadow-lg">Math Potential</span>
   <br />
-  <span className="text-white">Math • Science • Engineering</span>
-  <br />
-  <span className="text-primary">Your Success is Our Mission!</span>
-</h2>
+  <span className="text-white drop-shadow-lg">with</span>{" "}
+  <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent drop-shadow-lg">Expert Tutors</span>
+</h1>
 
-
-
-        <blockquote className="text-md sm:text-lg text-gray-300 pl-4 italic">
-          &quot;Empowering students to excel in STEM subjects through personalized
-          tutoring and expert guidance&quot;
-          <br />
-          {/* — Lyceeum Tutoring Services */}
-        </blockquote>
+        <p className="text-base sm:text-lg lg:text-xl text-gray-100 max-w-2xl mx-auto drop-shadow-lg font-medium px-2">
+          Join hundreds of Canadian students who've improved their grades with our personalized tutoring in Math, Science, and Engineering
+        </p>
 
         {/* Primary CTA */}
-        <div>
-          <button onClick={() => setEnquiryOpen(true)} className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-base font-semibold text-white shadow hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70">
-            Enquire Now
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center mt-6 sm:mt-8">
+          <button onClick={() => setEnquiryOpen(true)} className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-white shadow-2xl hover:shadow-emerald-500/25 transform hover:scale-105 transition-all duration-300 border border-emerald-400/30">
+            Get Started Today
           </button>
+          <a href="#services" className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white shadow-xl hover:bg-white/20 hover:scale-105 transition-all duration-300">
+            Learn More
+          </a>
         </div>
 
 

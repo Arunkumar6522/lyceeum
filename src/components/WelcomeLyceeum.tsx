@@ -9,21 +9,22 @@ export default function WelcomeLyceeum() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="w-full max-w-5xl mx-auto px-6 py-16">
-      <motion.h2 
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-3xl md:text-4xl font-bold text-center mb-6"
-      >
-        Welcome to Lyceeum
-      </motion.h2>
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        className="space-y-4 text-gray-700 leading-relaxed"
-      >
+    <section ref={ref} className="w-full bg-gray-50 py-20">
+      <div className="max-w-6xl mx-auto px-6">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-4xl md:text-5xl font-bold text-center mb-8 gradient-text"
+        >
+          Welcome to Lyceeum
+        </motion.h2>
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 space-y-6 text-gray-700 leading-relaxed text-lg"
+        >
         <p>
           Embarking on a university-level math course can be a challenging yet rewarding experience. Whether you're navigating calculus, linear algebra, or advanced statistics, having a skilled math tutor by your side can make all the difference. At Lycéeum, we take pride in being a leading provider of exceptional math tutoring services in Canada, dedicated to helping university students excel in their mathematical pursuits.
         </p>
@@ -39,7 +40,8 @@ export default function WelcomeLyceeum() {
         <p>
           Don't let math anxiety hinder your academic success. Choose Lyceeum as your trusted partner on your university math journey. Visit <a className="text-primary underline" href="https://www.lyceeum.ca/" target="_blank" rel="noreferrer">https://www.lyceeum.ca/</a> to explore our tutoring services and take the first step towards mastering mathematics at the university level.
         </p>
-      </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 }

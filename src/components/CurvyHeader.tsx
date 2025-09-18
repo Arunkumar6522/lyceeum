@@ -11,7 +11,7 @@ export default function CurvyHeader() {
         >
           <path
             d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
-            className="fill-white"
+            className="fill-gray-50"
           ></path>
         </svg>
       </div>

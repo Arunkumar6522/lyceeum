@@ -64,10 +64,10 @@ export default function OurCourseOverview() {
 
         {/* Buttons */}
         <div className="mt-12 flex items-center gap-4">
-          <button className="border border-white px-4 py-2 text-white font-medium hover:bg-white hover:text-primary rounded">
+          <button className="bg-gradient-to-r from-emerald-500 to-teal-500 px-6 py-3 text-white font-bold hover:shadow-emerald-500/25 transform hover:scale-105 transition-all rounded-full border border-emerald-400/30">
             Explore
           </button>
-          <button className="flex items-center gap-2 text-white font-medium">
+          <button className="flex items-center gap-2 text-white font-medium hover:text-emerald-300 transition-colors">
             Learn More <span className="text-xl">›</span>
           </button>
         </div>

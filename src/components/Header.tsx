@@ -19,10 +19,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-primary shadow-md fixed top-0 left-0 z-50">
-      <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+    <header className="w-full bg-gradient-to-r from-emerald-500/90 to-teal-500/90 backdrop-blur-sm shadow-lg fixed top-0 left-0 z-50 border-b border-emerald-400/30">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
         {/* Left: Company Name */}
-        <Link href="/" className="text-2xl font-bold text-white">
+        <Link href="/" className="text-lg sm:text-xl lg:text-2xl font-bold text-white drop-shadow-lg">
           Lyceeum Tutoring
         </Link>
 
@@ -35,13 +35,13 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`relative transition-colors
+                className={`relative transition-colors font-medium
                   after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:mx-auto
                   after:h-[2px] after:w-0 after:transition-all after:duration-300
                   ${
                     isActive
                       ? "text-white font-semibold after:w-full after:bg-white"
-                      : "text-white/90 hover:text-white hover:after:w-full after:bg-white"
+                      : "text-white/80 hover:text-white hover:after:w-full after:bg-white"
                   }`}
               >
                 {item.name}
@@ -52,7 +52,7 @@ const Header = () => {
 
         {/* Right: Contact CTA */}
         <div className="hidden md:block">
-          <Link href="/contact" className="px-5 py-2 bg-white text-primary font-semibold rounded-full shadow-md hover:bg-white/90 transition-colors">Contact Us</Link>
+          <Link href="/contact" className="px-4 lg:px-6 py-2 lg:py-3 bg-white text-emerald-600 font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 hover:bg-emerald-50 text-sm lg:text-base">Contact Us</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -66,8 +66,8 @@ const Header = () => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden bg-primary border-t border-white/20">
-          <nav className="flex flex-col space-y-4 px-6 py-4">
+        <div className="md:hidden bg-emerald-500/95 backdrop-blur-sm border-t border-emerald-400/30">
+          <nav className="flex flex-col space-y-3 px-4 py-4">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
 
@@ -80,7 +80,7 @@ const Header = () => {
                               ${
                                 isActive
                                   ? "text-white font-semibold after:w-full after:left-0 after:bg-white"
-                                  : "text-white/90 hover:text-white hover:after:w-full hover:after:left-0 after:bg-white"
+                                  : "text-white/80 hover:text-white hover:after:w-full hover:after:left-0 after:bg-white"
                               }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -90,7 +90,7 @@ const Header = () => {
             })}
 
             {/* Mobile Contact Button */}
-            <Link href="/contact" className="px-5 py-2 bg-white text-primary font-semibold rounded-full shadow-md hover:bg-white/90 transition-colors text-center" onClick={() => setIsOpen(false)}>
+            <Link href="/contact" className="px-6 py-3 bg-white text-emerald-600 font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center hover:bg-emerald-50 mx-2 mt-2" onClick={() => setIsOpen(false)}>
               Contact Us
             </Link>
           </nav>
