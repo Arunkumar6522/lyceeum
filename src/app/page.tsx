@@ -7,21 +7,26 @@ import CoursesOffered from "@/components/CoursesOffered";
 import CurvyHeader from "@/components/CurvyHeader";
 import { useState } from "react";
 import EnquiryModal from "@/components/EnquiryModal";
+import Image from "next/image";
 
 export default function Home() {
   const [enquiryOpen, setEnquiryOpen] = useState(false);
   return (
     <>
     
-    <div
-      className="relative flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 text-white pt-16 sm:pt-20"
-      style={{
-        backgroundImage: "url('student-using-laptop-having-online-class-with-teac-2025-03-18-19-01-01-utc.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <div className="relative flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 text-white pt-16 sm:pt-20">
+      {/* Optimized Background Image */}
+      <Image
+        src="/student-using-laptop-having-online-class-with-teac-2025-03-18-19-01-01-utc.jpg"
+        alt="Student using laptop for online tutoring class"
+        fill
+        priority
+        quality={75}
+        sizes="100vw"
+        className="object-cover object-center"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+      />
 
       {/* Overlay for readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
