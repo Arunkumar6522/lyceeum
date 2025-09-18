@@ -26,7 +26,7 @@ export default function WelcomeLyceeum() {
           className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 space-y-6 text-gray-700 leading-relaxed text-lg"
         >
         <p>
-          Embarking on a university-level math course can be a challenging yet rewarding experience. Whether you're navigating calculus, linear algebra, or advanced statistics, having a skilled math tutor by your side can make all the difference. At Lycéeum, we take pride in being a leading provider of exceptional math tutoring services in Canada, dedicated to helping university students excel in their mathematical pursuits.
+          Embarking on a university-level math course can be a challenging yet rewarding experience. Whether you&apos;re navigating calculus, linear algebra, or advanced statistics, having a skilled math tutor by your side can make all the difference. At Lycéeum, we take pride in being a leading provider of exceptional math tutoring services in Canada, dedicated to helping university students excel in their mathematical pursuits.
         </p>
         <p>
           Our team of experienced and highly qualified math tutors is committed to fostering a supportive learning environment tailored to the unique needs of university students. With a deep understanding of the intricacies of university-level math, our tutors guide students through complex concepts, offering clarity and insights that go beyond the classroom.
@@ -35,10 +35,10 @@ export default function WelcomeLyceeum() {
           Why choose Lyceeum for your university math tutoring needs? Our tutors are not only proficient in the subject matter but also adept at connecting with students, making the learning process engaging and enjoyable. We prioritize personalized sessions, ensuring that each student receives the attention they deserve to grasp challenging mathematical concepts.
         </p>
         <p>
-          Navigating the university curriculum can be overwhelming, but our tutors at Lycéeum are here to simplify the journey. Whether you're seeking assistance with assignments, preparing for exams, or aiming to deepen your understanding of key mathematical principles, our tutors are well-equipped to provide comprehensive support.
+          Navigating the university curriculum can be overwhelming, but our tutors at Lycéeum are here to simplify the journey. Whether you&apos;re seeking assistance with assignments, preparing for exams, or aiming to deepen your understanding of key mathematical principles, our tutors are well-equipped to provide comprehensive support.
         </p>
         <p>
-          Don't let math anxiety hinder your academic success. Choose Lyceeum as your trusted partner on your university math journey. Visit <a className="text-primary underline" href="https://www.lyceeum.ca/" target="_blank" rel="noreferrer">https://www.lyceeum.ca/</a> to explore our tutoring services and take the first step towards mastering mathematics at the university level.
+          Don&apos;t let math anxiety hinder your academic success. Choose Lyceeum as your trusted partner on your university math journey. Visit <a className="text-primary underline" href="https://www.lyceeum.ca/" target="_blank" rel="noreferrer">https://www.lyceeum.ca/</a> to explore our tutoring services and take the first step towards mastering mathematics at the university level.
         </p>
         </motion.div>
       </div>

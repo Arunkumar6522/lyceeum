@@ -2,8 +2,9 @@
 
 import { useState, useRef } from "react";
 import { AnimatePresence, motion, useInView } from "framer-motion";
+import { ReactElement } from "react";
 
-type Item = { id: string; q: string; a: JSX.Element };
+type Item = { id: string; q: string; a: ReactElement };
 
 const items: Item[] = [
   {
@@ -63,14 +64,14 @@ const items: Item[] = [
     id: "group",
     q: "What is group tutoring?",
     a: (
-      <p className="mt-2 text-gray-700">Our group tutoring sessions are limited to a maximum of 4 students, ensuring a personalized and engaging learning experience. Our sessions begin with lectures and theories, followed by practical problem-solving activities. Our tutors work individually with each student, providing focused attention to address their difficulties one at a time. We also align our teaching with the students' school syllabus, ensuring that our tutoring complements their ongoing studies.</p>
+      <p className="mt-2 text-gray-700">Our group tutoring sessions are limited to a maximum of 4 students, ensuring a personalized and engaging learning experience. Our sessions begin with lectures and theories, followed by practical problem-solving activities. Our tutors work individually with each student, providing focused attention to address their difficulties one at a time. We also align our teaching with the students&apos; school syllabus, ensuring that our tutoring complements their ongoing studies.</p>
     ),
   },
   {
     id: "schedule",
     q: "How flexible is scheduling?",
     a: (
-      <p className="mt-2 text-gray-700">We understand that your schedule is important, and that's why we offer flexible availability for our tutoring sessions. Students can choose any day of the week between 9 am and 10 pm for their one-to-one in-person lessons. Our group lessons, on the other hand, take place on weekdays from 5 PM to 8 PM and on weekends from 10 AM to 5 PM.</p>
+      <p className="mt-2 text-gray-700">We understand that your schedule is important, and that&apos;s why we offer flexible availability for our tutoring sessions. Students can choose any day of the week between 9 am and 10 pm for their one-to-one in-person lessons. Our group lessons, on the other hand, take place on weekdays from 5 PM to 8 PM and on weekends from 10 AM to 5 PM.</p>
     ),
   },
   {
@@ -82,7 +83,7 @@ const items: Item[] = [
         <ul className="mt-3 list-disc pl-6 space-y-1">
           <li>Strong subject knowledge: a deep understanding of the subject and clear explanations.</li>
           <li>Patience and empathy: supportive guidance for students who struggle.</li>
-          <li>Good communication skills: adapt teaching to the student's learning style.</li>
+          <li>Good communication skills: adapt teaching to the student&apos;s learning style.</li>
           <li>Organizational skills: structured sessions with goals and progress tracking.</li>
           <li>Time management skills: punctual, efficient coverage of required material.</li>
         </ul>
@@ -118,7 +119,7 @@ const items: Item[] = [
             <p className="text-xs text-gray-600">Cell, Molecular, Genetics</p>
           </div>
         </div>
-        <p className="mt-3 text-sm text-gray-600 italic">Specializing in CEGEP courses with tailored approaches for each student's needs.</p>
+        <p className="mt-3 text-sm text-gray-600 italic">Specializing in CEGEP courses with tailored approaches for each student&apos;s needs.</p>
       </div>
     ),
   },
@@ -141,7 +142,7 @@ const items: Item[] = [
       <div className="mt-3">
         <div className="bg-green-50 border border-green-200 p-3 rounded-lg">
           <span className="text-green-800 font-semibold">✅ No Contracts Required!</span>
-          <p className="text-gray-700 mt-1">Complete flexibility - book as little as 1 hour or schedule monthly sessions. No long-term commitments. It's entirely up to your learning needs.</p>
+          <p className="text-gray-700 mt-1">Complete flexibility - book as little as 1 hour or schedule monthly sessions. No long-term commitments. It&apos;s entirely up to your learning needs.</p>
         </div>
       </div>
     ) 
@@ -195,7 +196,7 @@ const items: Item[] = [
               <a href="mailto:lyceeum@gmail.co" className="text-emerald-700 font-semibold hover:text-emerald-800">lyceeum@gmail.co</a>
             </div>
           </div>
-          <p className="text-sm text-gray-600 mt-2">We're here to help you succeed!</p>
+          <p className="text-sm text-gray-600 mt-2">We&apos;re here to help you succeed!</p>
         </div>
       </div>
     ) 

@@ -22,8 +22,18 @@ export async function GET() {
   }
 }
 
+interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  category: string;
+  link: string;
+}
+
 function parseRSSFeed(xmlText: string) {
-  const posts: any[] = [];
+  const posts: BlogPost[] = [];
   
   try {
     // Simple XML parsing for RSS feed

@@ -5,8 +5,6 @@ import WelcomeLyceeum from "@/components/WelcomeLyceeum";
 import TutoringOptions from "@/components/TutoringOptions";
 import CoursesOffered from "@/components/CoursesOffered";
 import CurvyHeader from "@/components/CurvyHeader";
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import EnquiryModal from "@/components/EnquiryModal";
 
@@ -39,7 +37,7 @@ export default function Home() {
 </h1>
 
         <p className="text-base sm:text-lg lg:text-xl text-gray-100 max-w-2xl mx-auto drop-shadow-lg font-medium px-2">
-          Join hundreds of Canadian students who've improved their grades with our personalized tutoring in Math, Science, and Engineering
+          Join hundreds of Canadian students who&apos;ve improved their grades with our personalized tutoring in Math, Science, and Engineering
         </p>
 
         {/* Primary CTA */}

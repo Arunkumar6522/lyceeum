@@ -2,7 +2,7 @@ export default function ContactPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-10 pt-20 sm:pt-24">
       <h1 className="text-3xl md:text-4xl font-bold mb-6">Contact Us</h1>
-      <p className="text-gray-700 mb-8">We'd love to hear from you. Reach out and we'll get back to you shortly.</p>
+      <p className="text-gray-700 mb-8">We&apos;d love to hear from you. Reach out and we&apos;ll get back to you shortly.</p>
       <form action="mailto:lyceeum@gmail.co" method="post" encType="text/plain" className="space-y-4">
         <div>
           <label className="block text-sm font-medium mb-1">Name</label>
